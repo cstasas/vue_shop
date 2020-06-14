@@ -194,7 +194,7 @@ export default {
     },
     // 点击预览图片触发的事件
     handlePreview(file) {
-      console.log(file)
+      // console.log(file)
       this.imgURL = file.response.data.url
       this.dialogImgVisible = true
     },
@@ -241,7 +241,7 @@ export default {
           this.addForm.attrs.push(newObj)
         })
         form.attrs = this.addForm.attrs
-        console.log(form)
+        // console.log(form)
         // 发送添加商品的请求
         const { data: res } = await this.$http.post('goods', form)
         if (res.meta.status !== 201) return this.$message.error('当前添加商品失败!')

@@ -194,7 +194,7 @@ export default {
     },
     // 选择项发生变化触发这个函数
     parentCateChange() {
-      console.log(this.selectedKeys)
+      // console.log(this.selectedKeys)
       // 如果 this.selectedKeys.length 数组长度大于0,说明被选中了,反之则没有
       if (this.selectedKeys.length > 0) {
         this.addCateForm.cat_pid = this.selectedKeys[this.selectedKeys.length - 1]

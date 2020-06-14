@@ -158,7 +158,7 @@ export default {
     async editExpress() {
       const { data: res } = await this.$http.get('/kuaidi/1106975712662')
       if (res.meta.status !== 200) return this.$message.error('查询物流信息失败!')
-      console.log(res.data)
+      // console.log(res.data)
       this.expressData = res.data
       this.editExpressVisible = true
     }
